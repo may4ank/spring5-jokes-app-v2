@@ -1,6 +1,6 @@
-package JokesController;
+package com.mayank.spring5jokesappv2.JokesController;
 
-import Services.JokeService;
+import com.mayank.spring5jokesappv2.Services.JokeService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,10 +13,10 @@ public class JController {
     public JController(JokeService jokeService) {
         this.jokeService = jokeService;  }
 
-        @RequestMapping("/")
+        @RequestMapping("/Showjokes")
         public String showJokes(Model model)
         {
-            model.addAttribute("jks", jokeService.getJokes());
+           model.addAttribute("jks", jokeService.getJokes());
 
             return "myjokes";
         }

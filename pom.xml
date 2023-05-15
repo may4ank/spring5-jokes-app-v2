@@ -14,9 +14,7 @@
     <name>spring5-jokes-app-v2</name>
     <description>spring5-jokes-app-v2</description>
     <properties>
-        <java.version>13</java.version>
-        <maven.compiler.source>13</maven.compiler.source>
-        <maven.compiler.target>13</maven.compiler.target>
+        <java.version>16</java.version>
 
     </properties>
     <dependencies>
